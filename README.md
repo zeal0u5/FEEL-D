@@ -15,7 +15,6 @@ ffmpeg: <https://www.gyan.dev/ffmpeg/builds/>
 ### How to run
 
 - Call the program
-- Enter 1 or 2 depending on file or live microphone use
 - Enter the file location of .wav file (without "")
 
 ### What it returns
@@ -25,4 +24,4 @@ ffmpeg: <https://www.gyan.dev/ffmpeg/builds/>
 
 ## Using HapticMusicPlayer.py
 
-- have not tested yet.
+- have not tested yet due to lack of device.
