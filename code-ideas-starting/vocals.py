@@ -1,10 +1,7 @@
 # #######################################################
-# Docstring for code-ideas-starting.vocals
-# 
-# This program either takes in a .wav file and returns the transcript
+# This program takes in a .wav file and returns the transcript
 # of the vocal part to console or saved in a JSON file as a SHA256
-# key-value pair or listens to live vocals and returns the transcript
-# to console.
+# key-value pair 
 # #######################################################
 
 
@@ -14,9 +11,6 @@ import hashlib
 import whisper
 import sounddevice as sd
 import numpy as np
-import queue
-import sys
-import tempfile
 import scipy.io.wavfile as wav
 
 # ------------------------
@@ -125,6 +119,12 @@ def main():
 
     print("\n--- Transcription ---\n")
     print(text)
+    print("Is this correct? (y/n)")
+
+    user_input = input().strip().lower()
+    if user_input == "n":
+        print("Please edit the transcript and enter the corrected version:")
+        text = input().strip()
 
     save_transcript(input_file, text)
 
