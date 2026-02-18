@@ -4,7 +4,6 @@
 # key-value pair 
 # #######################################################
 
-
 import os
 import json
 import hashlib
@@ -85,11 +84,6 @@ def save_transcript(audio_path, text):
 def main():
     print("Loading Whisper model...")
     model = whisper.load_model(MODEL_SIZE)
-
-    print("\nSelect Mode:")
-    print("1 - Transcribe audio file")
-    print("2 - Real-time microphone transcription")
-
 
     input_file = input("Enter path to audio file: ").strip()
 
