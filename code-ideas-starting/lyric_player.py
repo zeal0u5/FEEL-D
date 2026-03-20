@@ -9,6 +9,8 @@
 # - Melody visualization in Tkinter
 # #######################################################
 
+# pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cpu
+
 import os
 import hashlib
 import sqlite3
